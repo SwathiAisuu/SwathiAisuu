@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a{
+               background-color: gray;
+               padding: 0.5px;
+               color:white;
+            }
+            table,th,td{
+                border: 3px solid black;
+                border-collapse: collapse;
+                width: 1000px;
+                margin: 1.5%;
+                padding: 2%;
+            }
+            #b{
+                float:right;
+                width: 400;
+                color:red;
+            }
+        </style>
+        <title>
+         RESUME/CV design 
+        </title>
+        <link rel="stylesheet" href="multiresumestyle.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".full_info_wrap .tabs ul li").click(function(){
+				$(".full_info_wrap .tabs ul li").removeClass("active");
+				$(this).addClass("active");               
+
+				var datali = $(this).attr("data-li");
+
+				$(".full_info_item").hide();
+
+				if(datali == "personal_info"){
+					$(".personal_info").show();
+				}
+				else if(datali == "education"){
+					$(".education").show();
+				}
+				else if(datali == "contact"){
+					$(".contact").show();
+				}
+				else{
+					console.log("Loding...");
+				}
+			})
+            })  
+            </script>
+            
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="resume">
+                <div class="profile_info">
+                    <div class="profile_img">
+                        <img src="swathi.jpg" alt="profile_pic" width="150px" height="150px" > 
+                        
+                    </div>
+                    <div class="profile_data">
+                        <p class="name">SWATHI KICHETTANE</p>
+                        <span>PONDICHERRY</span>
+                    </div>
+                    <div class="view_more_btn">
+                        <a href="#">View More</a>
+
+                    </div>
+                </div>
+                    <div class="skills">
+                        <div class="title">
+                            Skills
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="skill_item html">
+                                    <div class="icon"></div>
+                                    <div class="text">HTML</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill_item css">
+                                    <div class="icon"></div>
+                                    <div class="text">CSS</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill_item vb">
+                                    <div class="icon"></div>
+                                    <div class="text">VISUAL BASIC</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill_item py">
+                                    <div class="icon"></div>
+                                    <div class="text">PYTHON</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill_item c">
+                                    <div class="icon"></div>
+                                    <div class="text">C ,C++</div>
+                                </div>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="full_info_wrap">
+                            <div class="tabs">
+                                <ul>
+                                    <li data-li="personal_info" class="active">Personal_Info</li>
+                                    <li data-li="education">Education</li>
+                                    <li data-li="contact">Contact</li>
+                                </ul>
+                            </div>
+                            <div class="full_info">
+                                <div class="full_info_item personal_info">
+                                    <div class="title">PERSONAL_DETAILS</div>
+                                    <div class="info_wrap">
+                                        <ul>
+                                            <li>
+                                                <div class="sub_title">
+                                                     Father’s Name  
+                                                </div>
+                                                <div class="info_item">
+                                                    KICHETTANE.G 
+                                                </div>
+
+                                               </li>
+                                               <li>
+                                                <div class="sub_title">
+                                                    permannet address:
+                                                </div>
+                                                <div class="info_item">
+                                                    No.5, East Street,
+                                                    kanapathycheetkulam, 
+                                                    Puducherry-605014 
+       
+                                                    
+                                                </div>
+
+                                               </li>
+
+                                               <li>
+                                                   <div class="sub_title">Date of Birth</div>
+                                                <div class="info_item">
+                                                  AUGST18,1999
+                                                 </div>
+                                                </li> 
+                                                <li>  
+                                               <div class="sub_title">nationality</div>
+                                                <div class="info_item">
+                                                  India
+                                                </div>
+                                                </li>
+                                                <li>  
+                                                    <div class="sub_title"> Lanuage Known</div>
+                                                     <div class="info_item">
+                                                        Tamil,Enlish,Hindi,French
+                                                     </div>
+                                                     </li>
+                                                     <li>  
+                                                        <div class="sub_title"> Marital status</div>
+                                                         <div class="info_item">
+                                                             Single
+                                                         </div>
+                                                         </li>
+
+                                            
+                                      </ul>
+
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="full_info_item education" style="display: none ;">
+                                    <div class="title">EDUCATION</div>
+                                    <div class="info_wrap">
+                                        <ul>
+                                            <li>
+                                                <div class="sub_title">
+                                                     2014-2015 / SSLC       
+                                                </div>
+                                                <div class="info_item">
+                                                    <div class="info_title">
+                                                        Kolping Matriculation Higher Secondary School
+                                                    </div>
+                                                    <div class="data">
+                                                        89.4
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sub_title">
+                                                     2016-2017 / HSC       
+                                                </div>
+                                                <div class="info_item">
+                                                    <div class="info_title">
+                                                        Kolping Matriculation Higher Secondary School
+                                                    </div>
+                                                    <div class="data">
+                                                    72.6    
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sub_title">
+                                                    2017-2022  
+                                                </div>
+                                                <div class="info_item">
+                                                    <div class="info_title">
+                                                        PONDICHERRY UNIVERSITY
+                                                    </div>
+                                                    <div class="data">
+                                                       pursuing
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div> 
+
+                                </div>
+                                <div class="full_info_item contact" style="display: none;">
+                                <div class="title">CONTACT</div>
+                                    <div class="info_wrap">
+                                        <ul>
+                                            <li>
+                                                <span class="info_q">
+                                                    E-mail
+                                                </span>
+                                                <span class="info_a">
+                                                    SWATHI.ANIKRISH@gmail.com
+                                                </span>
+                                                    
+                                            </li>
+
+                                            <li>
+                                                <span class="info_q">
+                                                  contact
+                                                </span>
+                                                <span class="info_a">
+                                                    6380761873
+                                                </span>
+                                                    
+                                            </li>
+
+                                            <li>
+                                                <span class="info_q">
+                                                    E-mail
+                                                </span>
+                                                <span class="info_a">
+                                                    aisuuswathi@gmail.com
+                                                </span>
+                                                    
+                                            </li>
+
+                                            <li>
+                                                <span class="info_q">
+                                                Instagram
+                                                </span>
+                                                <span class="info_a">
+                                                    instagram.com/uk_aisuu/Anikrish
+                                                </span>
+                                                    
+                                            </li>
+
+                                            <li>
+                                                <span class="info_q">
+                                                Github
+                                                </span>
+                                                <span class="info_a">
+                                                    github.com/SwathiAisuu/swathiaisuu.github.io
+                                                </span>
+                                                    
+                                            </li>
+
+                                           
+                                        </ul>
+                                    </div>
+
+                                
+                            </div>
+
+
+                        </div>
+                        
+                    </div>
+              
+            </div>
+        </div>
+ 
+        
+    </body>
+</html>
